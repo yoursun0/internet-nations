@@ -7,3 +7,6 @@ dist/
 !.env.example
 .vite/
 coverage/
+scripts/__pycache__/
+__pycache__/
+*.pyc
