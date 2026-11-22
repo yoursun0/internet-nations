@@ -1,0 +1,1101 @@
+{
+  "notes": "Categorical colours are hand-tuned for a language-map legend. Close greens (WhatsApp, LINE, WeChat, Naver, M-Pesa) are deliberately shifted.",
+  "platforms": {
+    "whatsapp": {
+      "name": {
+        "en": "WhatsApp",
+        "zh-Hant": "WhatsApp"
+      },
+      "category": [
+        "messaging",
+        "social"
+      ],
+      "color": "#128C7E"
+    },
+    "facebook": {
+      "name": {
+        "en": "Facebook",
+        "zh-Hant": "Facebook"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#1877F2"
+    },
+    "instagram": {
+      "name": {
+        "en": "Instagram",
+        "zh-Hant": "Instagram"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#C13584"
+    },
+    "tiktok": {
+      "name": {
+        "en": "TikTok",
+        "zh-Hant": "TikTok"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#111111"
+    },
+    "youtube": {
+      "name": {
+        "en": "YouTube",
+        "zh-Hant": "YouTube"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#E53935"
+    },
+    "wechat": {
+      "name": {
+        "en": "WeChat / Weixin",
+        "zh-Hant": "微信"
+      },
+      "category": [
+        "social",
+        "messaging",
+        "payments"
+      ],
+      "color": "#2DBE64"
+    },
+    "weibo": {
+      "name": {
+        "en": "Weibo",
+        "zh-Hant": "微博"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#E6162D"
+    },
+    "xiaohongshu": {
+      "name": {
+        "en": "Xiaohongshu (Little Red Book)",
+        "zh-Hant": "小紅書"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#FF2442"
+    },
+    "douyin": {
+      "name": {
+        "en": "Douyin",
+        "zh-Hant": "抖音"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#2B2B2B"
+    },
+    "kuaishou": {
+      "name": {
+        "en": "Kuaishou",
+        "zh-Hant": "快手"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#FF6A00"
+    },
+    "vk": {
+      "name": {
+        "en": "VK",
+        "zh-Hant": "VK"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#0077FF"
+    },
+    "line": {
+      "name": {
+        "en": "LINE",
+        "zh-Hant": "LINE"
+      },
+      "category": [
+        "messaging",
+        "social",
+        "payments"
+      ],
+      "color": "#00B900"
+    },
+    "kakaotalk": {
+      "name": {
+        "en": "KakaoTalk",
+        "zh-Hant": "KakaoTalk"
+      },
+      "category": [
+        "messaging",
+        "social"
+      ],
+      "color": "#FEE500"
+    },
+    "zalo": {
+      "name": {
+        "en": "Zalo",
+        "zh-Hant": "Zalo"
+      },
+      "category": [
+        "messaging"
+      ],
+      "color": "#0068FF"
+    },
+    "telegram": {
+      "name": {
+        "en": "Telegram",
+        "zh-Hant": "Telegram"
+      },
+      "category": [
+        "messaging"
+      ],
+      "color": "#26A5E4"
+    },
+    "messenger": {
+      "name": {
+        "en": "Messenger",
+        "zh-Hant": "Messenger"
+      },
+      "category": [
+        "messaging"
+      ],
+      "color": "#006AFF"
+    },
+    "imessage": {
+      "name": {
+        "en": "iMessage",
+        "zh-Hant": "iMessage"
+      },
+      "category": [
+        "messaging"
+      ],
+      "color": "#34C759"
+    },
+    "signal": {
+      "name": {
+        "en": "Signal",
+        "zh-Hant": "Signal"
+      },
+      "category": [
+        "messaging"
+      ],
+      "color": "#3A76F0"
+    },
+    "snapchat": {
+      "name": {
+        "en": "Snapchat",
+        "zh-Hant": "Snapchat"
+      },
+      "category": [
+        "messaging",
+        "social"
+      ],
+      "color": "#FFFC00"
+    },
+    "x": {
+      "name": {
+        "en": "X (Twitter)",
+        "zh-Hant": "X"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#1A1A1A"
+    },
+    "reddit": {
+      "name": {
+        "en": "Reddit",
+        "zh-Hant": "Reddit"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#FF4500"
+    },
+    "threads": {
+      "name": {
+        "en": "Threads",
+        "zh-Hant": "Threads"
+      },
+      "category": [
+        "social"
+      ],
+      "color": "#2E2E2E"
+    },
+    "google": {
+      "name": {
+        "en": "Google",
+        "zh-Hant": "Google"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#4285F4"
+    },
+    "bing": {
+      "name": {
+        "en": "Bing",
+        "zh-Hant": "Bing"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#0A7380"
+    },
+    "baidu": {
+      "name": {
+        "en": "Baidu",
+        "zh-Hant": "百度"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#2932E1"
+    },
+    "yandex": {
+      "name": {
+        "en": "Yandex",
+        "zh-Hant": "Yandex"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#FC3F1D"
+    },
+    "naver": {
+      "name": {
+        "en": "Naver",
+        "zh-Hant": "Naver"
+      },
+      "category": [
+        "search",
+        "social"
+      ],
+      "color": "#00A653"
+    },
+    "yahoojp": {
+      "name": {
+        "en": "Yahoo! JAPAN",
+        "zh-Hant": "Yahoo! JAPAN"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#FF0033"
+    },
+    "seznam": {
+      "name": {
+        "en": "Seznam",
+        "zh-Hant": "Seznam"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#CC0000"
+    },
+    "duckduckgo": {
+      "name": {
+        "en": "DuckDuckGo",
+        "zh-Hant": "DuckDuckGo"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#DE5833"
+    },
+    "daum": {
+      "name": {
+        "en": "Daum",
+        "zh-Hant": "Daum"
+      },
+      "category": [
+        "search"
+      ],
+      "color": "#1E73BE"
+    },
+    "alipay": {
+      "name": {
+        "en": "Alipay",
+        "zh-Hant": "支付寶"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1677FF"
+    },
+    "wechatpay": {
+      "name": {
+        "en": "WeChat Pay",
+        "zh-Hant": "微信支付"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#09BB07"
+    },
+    "unionpay": {
+      "name": {
+        "en": "UnionPay",
+        "zh-Hant": "銀聯"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#E21836"
+    },
+    "alipayhk": {
+      "name": {
+        "en": "AlipayHK",
+        "zh-Hant": "AlipayHK"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1677FF"
+    },
+    "octopus": {
+      "name": {
+        "en": "Octopus",
+        "zh-Hant": "八達通"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#F7A800"
+    },
+    "fps": {
+      "name": {
+        "en": "FPS (Faster Payment System)",
+        "zh-Hant": "轉數快"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#0052CC"
+    },
+    "suica": {
+      "name": {
+        "en": "Suica / Pasmo / IC",
+        "zh-Hant": "Suica／Pasmo／交通 IC"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#8FBC5A"
+    },
+    "paypay": {
+      "name": {
+        "en": "PayPay",
+        "zh-Hant": "PayPay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#FF241D"
+    },
+    "linepay": {
+      "name": {
+        "en": "LINE Pay",
+        "zh-Hant": "LINE Pay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00B900"
+    },
+    "jkopay": {
+      "name": {
+        "en": "JKoPay",
+        "zh-Hant": "街口支付"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#FF6B00"
+    },
+    "kakaopay": {
+      "name": {
+        "en": "KakaoPay",
+        "zh-Hant": "KakaoPay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#FEE500"
+    },
+    "naverpay": {
+      "name": {
+        "en": "Naver Pay",
+        "zh-Hant": "Naver Pay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00A653"
+    },
+    "samsungpay": {
+      "name": {
+        "en": "Samsung Pay",
+        "zh-Hant": "Samsung Pay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1428A0"
+    },
+    "toss": {
+      "name": {
+        "en": "Toss",
+        "zh-Hant": "Toss"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#0064FF"
+    },
+    "paynow": {
+      "name": {
+        "en": "PayNow",
+        "zh-Hant": "PayNow"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#D32F2F"
+    },
+    "duitnow": {
+      "name": {
+        "en": "DuitNow",
+        "zh-Hant": "DuitNow"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#E31C3D"
+    },
+    "grabpay": {
+      "name": {
+        "en": "GrabPay",
+        "zh-Hant": "GrabPay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00B14F"
+    },
+    "gcash": {
+      "name": {
+        "en": "GCash",
+        "zh-Hant": "GCash"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#0057FF"
+    },
+    "maya": {
+      "name": {
+        "en": "Maya",
+        "zh-Hant": "Maya"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00C7B1"
+    },
+    "momo": {
+      "name": {
+        "en": "MoMo",
+        "zh-Hant": "MoMo"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#A50064"
+    },
+    "gopay": {
+      "name": {
+        "en": "GoPay",
+        "zh-Hant": "GoPay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00AED6"
+    },
+    "ovo": {
+      "name": {
+        "en": "OVO",
+        "zh-Hant": "OVO"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#4C3494"
+    },
+    "dana": {
+      "name": {
+        "en": "DANA",
+        "zh-Hant": "DANA"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#118EE9"
+    },
+    "qris": {
+      "name": {
+        "en": "QRIS",
+        "zh-Hant": "QRIS"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#EE2E24"
+    },
+    "promptpay": {
+      "name": {
+        "en": "PromptPay",
+        "zh-Hant": "PromptPay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1BA0E2"
+    },
+    "truemoney": {
+      "name": {
+        "en": "TrueMoney",
+        "zh-Hant": "TrueMoney"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#F58220"
+    },
+    "upi": {
+      "name": {
+        "en": "UPI",
+        "zh-Hant": "UPI"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#5F259F"
+    },
+    "phonepe": {
+      "name": {
+        "en": "PhonePe",
+        "zh-Hant": "PhonePe"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#5F259F"
+    },
+    "googlepay": {
+      "name": {
+        "en": "Google Pay",
+        "zh-Hant": "Google Pay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#34A853"
+    },
+    "paytm": {
+      "name": {
+        "en": "Paytm",
+        "zh-Hant": "Paytm"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00BAF2"
+    },
+    "bkash": {
+      "name": {
+        "en": "bKash",
+        "zh-Hant": "bKash"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#E2136E"
+    },
+    "jazzcash": {
+      "name": {
+        "en": "JazzCash",
+        "zh-Hant": "JazzCash"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#C8102E"
+    },
+    "easypaisa": {
+      "name": {
+        "en": "Easypaisa",
+        "zh-Hant": "Easypaisa"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00A651"
+    },
+    "pix": {
+      "name": {
+        "en": "Pix",
+        "zh-Hant": "Pix"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#32BCAD"
+    },
+    "mercadopago": {
+      "name": {
+        "en": "Mercado Pago",
+        "zh-Hant": "Mercado Pago"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#009EE3"
+    },
+    "paypal": {
+      "name": {
+        "en": "PayPal",
+        "zh-Hant": "PayPal"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#003087"
+    },
+    "venmo": {
+      "name": {
+        "en": "Venmo",
+        "zh-Hant": "Venmo"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#3D95CE"
+    },
+    "zelle": {
+      "name": {
+        "en": "Zelle",
+        "zh-Hant": "Zelle"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#6D1ED4"
+    },
+    "applepay": {
+      "name": {
+        "en": "Apple Pay",
+        "zh-Hant": "Apple Pay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#3A3A3A"
+    },
+    "cards": {
+      "name": {
+        "en": "Cards (Visa / Mastercard / debit)",
+        "zh-Hant": "信用卡／扣帳卡"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#6B7280"
+    },
+    "swish": {
+      "name": {
+        "en": "Swish",
+        "zh-Hant": "Swish"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00ADEF"
+    },
+    "vipps": {
+      "name": {
+        "en": "Vipps MobilePay",
+        "zh-Hant": "Vipps MobilePay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#FF5B24"
+    },
+    "blik": {
+      "name": {
+        "en": "BLIK",
+        "zh-Hant": "BLIK"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#E6007A"
+    },
+    "ideal": {
+      "name": {
+        "en": "iDEAL",
+        "zh-Hant": "iDEAL"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#CC0066"
+    },
+    "bizum": {
+      "name": {
+        "en": "Bizum",
+        "zh-Hant": "Bizum"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#ED1C24"
+    },
+    "mbway": {
+      "name": {
+        "en": "MB WAY",
+        "zh-Hant": "MB WAY"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#C41E3A"
+    },
+    "wero": {
+      "name": {
+        "en": "Wero",
+        "zh-Hant": "Wero"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#0B1F4B"
+    },
+    "bancontact": {
+      "name": {
+        "en": "Bancontact",
+        "zh-Hant": "Bancontact"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#0055A5"
+    },
+    "cartes-bancaires": {
+      "name": {
+        "en": "Cartes Bancaires",
+        "zh-Hant": "Cartes Bancaires"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1A365D"
+    },
+    "girocard": {
+      "name": {
+        "en": "girocard",
+        "zh-Hant": "girocard"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#003399"
+    },
+    "mada": {
+      "name": {
+        "en": "mada",
+        "zh-Hant": "mada"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#006C35"
+    },
+    "aani": {
+      "name": {
+        "en": "Aani",
+        "zh-Hant": "Aani"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#C4A35A"
+    },
+    "sbp": {
+      "name": {
+        "en": "SBP (Faster Payments)",
+        "zh-Hant": "SBP 快速支付"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1E4DB7"
+    },
+    "mir": {
+      "name": {
+        "en": "Mir",
+        "zh-Hant": "Mir"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#0B8F4B"
+    },
+    "mpesa": {
+      "name": {
+        "en": "M-Pesa",
+        "zh-Hant": "M-Pesa"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#C41E3A"
+    },
+    "opay": {
+      "name": {
+        "en": "OPay",
+        "zh-Hant": "OPay"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#00A86B"
+    },
+    "payshap": {
+      "name": {
+        "en": "PayShap",
+        "zh-Hant": "PayShap"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#007A4D"
+    },
+    "momo-gh": {
+      "name": {
+        "en": "MoMo (Ghana)",
+        "zh-Hant": "MoMo（迦納）"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#FFCC00"
+    },
+    "nip": {
+      "name": {
+        "en": "NIP / bank transfer",
+        "zh-Hant": "NIP／銀行轉帳"
+      },
+      "category": [
+        "payments"
+      ],
+      "color": "#1B4F72"
+    },
+    "chatgpt": {
+      "name": {
+        "en": "ChatGPT",
+        "zh-Hant": "ChatGPT"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#10A37F"
+    },
+    "gemini": {
+      "name": {
+        "en": "Gemini",
+        "zh-Hant": "Gemini"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#8E75B2"
+    },
+    "claude": {
+      "name": {
+        "en": "Claude",
+        "zh-Hant": "Claude"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#D97757"
+    },
+    "copilot": {
+      "name": {
+        "en": "Microsoft Copilot",
+        "zh-Hant": "Copilot"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#0078D4"
+    },
+    "grok": {
+      "name": {
+        "en": "Grok",
+        "zh-Hant": "Grok"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#C9A227"
+    },
+    "doubao": {
+      "name": {
+        "en": "Doubao",
+        "zh-Hant": "豆包"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#3B6EFF"
+    },
+    "qwen": {
+      "name": {
+        "en": "Qwen (Tongyi)",
+        "zh-Hant": "通義千問"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#FF6A00"
+    },
+    "deepseek": {
+      "name": {
+        "en": "DeepSeek",
+        "zh-Hant": "DeepSeek"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#4D6BFE"
+    },
+    "ernie": {
+      "name": {
+        "en": "Ernie / Wenxin",
+        "zh-Hant": "文心一言"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#2932E1"
+    },
+    "kimi": {
+      "name": {
+        "en": "Kimi",
+        "zh-Hant": "Kimi"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#222222"
+    },
+    "yuanbao": {
+      "name": {
+        "en": "Yuanbao",
+        "zh-Hant": "元寶"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#07C160"
+    },
+    "navercue": {
+      "name": {
+        "en": "Naver Cue:",
+        "zh-Hant": "Naver Cue:"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#00A653"
+    },
+    "perplexity": {
+      "name": {
+        "en": "Perplexity",
+        "zh-Hant": "Perplexity"
+      },
+      "category": [
+        "ai"
+      ],
+      "color": "#20808D"
+    }
+  },
+  "stacks": {
+    "wechat-superapp": {
+      "name": {
+        "en": "WeChat Super-App",
+        "zh-Hant": "微信超級應用圈"
+      },
+      "color": "#2DBE64"
+    },
+    "line-sphere": {
+      "name": {
+        "en": "LINE Sphere",
+        "zh-Hant": "LINE 圈"
+      },
+      "color": "#00B900"
+    },
+    "kakao-naver": {
+      "name": {
+        "en": "Kakao–Naver",
+        "zh-Hant": "Kakao／Naver 圈"
+      },
+      "color": "#FEE500"
+    },
+    "zalo-hybrid": {
+      "name": {
+        "en": "Zalo Hybrid",
+        "zh-Hant": "Zalo 混合圈"
+      },
+      "color": "#0068FF"
+    },
+    "vk-yandex": {
+      "name": {
+        "en": "VK–Yandex",
+        "zh-Hant": "VK／Yandex 圈"
+      },
+      "color": "#FC3F1D"
+    },
+    "whatsapp-meta": {
+      "name": {
+        "en": "WhatsApp–Meta",
+        "zh-Hant": "WhatsApp／Meta 圈"
+      },
+      "color": "#128C7E"
+    },
+    "anglosphere-mixed": {
+      "name": {
+        "en": "Anglosphere Mixed",
+        "zh-Hant": "英語圈混合"
+      },
+      "color": "#3F4C6B"
+    },
+    "unknown": {
+      "name": {
+        "en": "Data-poor",
+        "zh-Hant": "資料不足"
+      },
+      "color": "#C9C2B6"
+    }
+  }
+}

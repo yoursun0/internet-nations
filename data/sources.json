@@ -1,0 +1,157 @@
+{
+  "compiled": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "sources": {
+    "datareportal-2025-global": {
+      "title": "Digital 2025: Global Overview Report",
+      "publisher": "DataReportal / Kepios / We Are Social / Meltwater",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-global-overview-report"
+    },
+    "datareportal-2025-social": {
+      "title": "Digital 2025: top social platforms in 2025",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-sub-section-top-social-platforms"
+    },
+    "datareportal-2025-china": {
+      "title": "Digital 2025: China",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-china"
+    },
+    "datareportal-2025-hongkong": {
+      "title": "Digital 2025: Hong Kong",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-hong-kong"
+    },
+    "datareportal-2025-japan": {
+      "title": "Digital 2025: Japan",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-japan"
+    },
+    "datareportal-2025-korea": {
+      "title": "Digital 2025: South Korea",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-south-korea"
+    },
+    "datareportal-2025-thailand": {
+      "title": "Digital 2025: Thailand",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-thailand"
+    },
+    "datareportal-2025-brazil": {
+      "title": "Digital 2025: Brazil",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-brazil"
+    },
+    "datareportal-2025-india": {
+      "title": "Digital 2025: India",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-india"
+    },
+    "datareportal-2025-usa": {
+      "title": "Digital 2025: United States",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-united-states"
+    },
+    "datareportal-2025-indonesia": {
+      "title": "Digital 2025: Indonesia",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-indonesia"
+    },
+    "datareportal-2025-germany": {
+      "title": "Digital 2025: Germany",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-germany"
+    },
+    "datareportal-country-index": {
+      "title": "Digital 2025 local country headlines / country report index",
+      "publisher": "DataReportal",
+      "year": 2025,
+      "url": "https://datareportal.com/reports/digital-2025-local-country-headlines"
+    },
+    "similarweb-messaging-2025": {
+      "title": "Most Popular Messaging Apps In 2025",
+      "publisher": "Similarweb (Android app intelligence, 100 countries)",
+      "year": 2025,
+      "url": "https://www.similarweb.com/blog/research/apps/worldwide-messaging-apps/",
+      "notes": "Android-only; iMessage is not measured. Dated 24 March 2025."
+    },
+    "statcounter-search": {
+      "title": "StatCounter Global Stats — search engine market share (referrals)",
+      "publisher": "StatCounter",
+      "year": 2026,
+      "url": "https://gs.statcounter.com/search-engine-market-share",
+      "notes": "Referral share, not query share. Country tables vary by month. China panel is known to be skewed. Korea referrals disagree with local walled-garden panels."
+    },
+    "searchable-ai-2026": {
+      "title": "The AI Chatbot Gaining the Most Market Share in Every Country",
+      "publisher": "Searchable, using StatCounter AI-chatbot referrals",
+      "year": 2026,
+      "url": "https://www.searchable.com/data/ai-chatbot-market-share",
+      "notes": "Updated 5 August 2026. May–June 2026 average. Under-counts in-app and workplace use. China excluded from some comparisons."
+    },
+    "openai-availability-2026": {
+      "title": "ChatGPT and OpenAI API supported countries and territories",
+      "publisher": "OpenAI Help Center",
+      "year": 2026,
+      "url": "https://help.openai.com/en/articles/7947663-chatgpt-and-openai-api-supported-countries-and-territories",
+      "notes": "Checked 22 November 2026. Mainland China, Hong Kong, Macao, and Russia are not on the list."
+    },
+    "questmobile-china-ai-2026": {
+      "title": "QuestMobile standalone AI app MAUs in China (June 2026 figures as reported)",
+      "publisher": "QuestMobile, via contemporaneous reporting (TechNode, 36Kr, HK01, Popular in China)",
+      "year": 2026,
+      "url": "https://popularinchina.com/tech/most-popular-ai-apps-in-china",
+      "notes": "Doubao, Qwen, DeepSeek ranking. Cross-check with TechNode / 36Kr QuestMobile write-ups."
+    },
+    "technode-questmobile-2026": {
+      "title": "QuestMobile: China’s AI-native apps reach 499 million monthly active users",
+      "publisher": "TechNode",
+      "year": 2026,
+      "url": "https://technode.com/2026/07/14/questmobile-chinas-ai-native-apps-reach-499-million-monthly-active-users/"
+    },
+    "worldpay-gpr-2026": {
+      "title": "Worldpay Global Payments Report 2026 (2025 transaction-value data), as cited",
+      "publisher": "Worldpay / Global Payments, summarised by Fintech Genesis and others",
+      "year": 2026,
+      "url": "https://www.fintechgenesis.com/post/how-the-world-pays-payment-methods-by-country-and-region"
+    },
+    "gsma-sotir-2026": {
+      "title": "The State of the Industry Report on Mobile Money 2026",
+      "publisher": "GSMA",
+      "year": 2026,
+      "url": "https://www.gsma.com/sotir/",
+      "notes": "Includes Brazil Pix 2024 adoption figures (96% of adults)."
+    },
+    "digitalinasia-payments-2026": {
+      "title": "Asia Digital Payments Tracker 2026",
+      "publisher": "Digital in Asia",
+      "year": 2026,
+      "url": "https://digitalinasia.com/asia-digital-payments-tracker/"
+    },
+    "korea-search-conflict-2026": {
+      "title": "South Korea search: StatCounter referrals vs InternetTrend (Korea Times, 16 April 2026)",
+      "publisher": "StatCounter and InternetTrend as reported by The Korea Times",
+      "year": 2026,
+      "url": "https://www.searchengines.net/guides/search-engine-market-share-by-country/",
+      "notes": "Secondary compilation that prints both series and explains the walled-garden gap. Do not treat one series as the unique truth."
+    },
+    "cnnic-2025": {
+      "title": "CNNIC Statistical Report on Internet Development in China (online payments / users)",
+      "publisher": "CNNIC, as cited in Digital in Asia tracker and DataReportal China",
+      "year": 2025,
+      "url": "https://www.cnnic.com.cn/"
+    }
+  }
+}
