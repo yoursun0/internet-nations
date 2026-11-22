@@ -1,0 +1,338 @@
+{
+  "continents": {
+    "Africa": {
+      "name": {
+        "en": "Africa",
+        "zh-Hant": "非洲"
+      },
+      "bbox": [
+        -25,
+        -36,
+        52,
+        38
+      ]
+    },
+    "Asia": {
+      "name": {
+        "en": "Asia",
+        "zh-Hant": "亞洲"
+      },
+      "bbox": [
+        26,
+        -12,
+        150,
+        55
+      ]
+    },
+    "Europe": {
+      "name": {
+        "en": "Europe",
+        "zh-Hant": "歐洲"
+      },
+      "bbox": [
+        -25,
+        34,
+        40,
+        72
+      ]
+    },
+    "North America": {
+      "name": {
+        "en": "North America",
+        "zh-Hant": "北美洲"
+      },
+      "bbox": [
+        -170,
+        7,
+        -50,
+        72
+      ]
+    },
+    "South America": {
+      "name": {
+        "en": "South America",
+        "zh-Hant": "南美洲"
+      },
+      "bbox": [
+        -82,
+        -56,
+        -34,
+        13
+      ]
+    },
+    "Oceania": {
+      "name": {
+        "en": "Oceania",
+        "zh-Hant": "大洋洲"
+      },
+      "bbox": [
+        110,
+        -48,
+        180,
+        0
+      ]
+    }
+  },
+  "regions": {
+    "east-asia": {
+      "name": {
+        "en": "East Asia",
+        "zh-Hant": "東亞"
+      },
+      "continent": "Asia",
+      "bbox": [
+        100,
+        18,
+        150,
+        54
+      ]
+    },
+    "southeast-asia": {
+      "name": {
+        "en": "Southeast Asia",
+        "zh-Hant": "東南亞"
+      },
+      "continent": "Asia",
+      "bbox": [
+        92,
+        -11,
+        141,
+        24
+      ]
+    },
+    "south-asia": {
+      "name": {
+        "en": "South Asia",
+        "zh-Hant": "南亞"
+      },
+      "continent": "Asia",
+      "bbox": [
+        60,
+        5,
+        98,
+        37
+      ]
+    },
+    "central-asia": {
+      "name": {
+        "en": "Central Asia",
+        "zh-Hant": "中亞"
+      },
+      "continent": "Asia",
+      "bbox": [
+        46,
+        35,
+        88,
+        56
+      ]
+    },
+    "western-asia": {
+      "name": {
+        "en": "Western Asia",
+        "zh-Hant": "西亞"
+      },
+      "continent": "Asia",
+      "bbox": [
+        26,
+        12,
+        66,
+        43
+      ]
+    },
+    "western-europe": {
+      "name": {
+        "en": "Western Europe",
+        "zh-Hant": "西歐"
+      },
+      "continent": "Europe",
+      "bbox": [
+        -11,
+        41,
+        18,
+        60
+      ]
+    },
+    "northern-europe": {
+      "name": {
+        "en": "Northern Europe",
+        "zh-Hant": "北歐"
+      },
+      "continent": "Europe",
+      "bbox": [
+        -25,
+        54,
+        32,
+        72
+      ]
+    },
+    "southern-europe": {
+      "name": {
+        "en": "Southern Europe",
+        "zh-Hant": "南歐"
+      },
+      "continent": "Europe",
+      "bbox": [
+        -10,
+        35,
+        30,
+        47
+      ]
+    },
+    "eastern-europe": {
+      "name": {
+        "en": "Eastern Europe",
+        "zh-Hant": "東歐"
+      },
+      "continent": "Europe",
+      "bbox": [
+        12,
+        41,
+        44,
+        60
+      ]
+    },
+    "northern-america": {
+      "name": {
+        "en": "Northern America",
+        "zh-Hant": "北美"
+      },
+      "continent": "North America",
+      "bbox": [
+        -170,
+        24,
+        -50,
+        72
+      ]
+    },
+    "central-america": {
+      "name": {
+        "en": "Central America",
+        "zh-Hant": "中美洲"
+      },
+      "continent": "North America",
+      "bbox": [
+        -93,
+        7,
+        -77,
+        19
+      ]
+    },
+    "caribbean": {
+      "name": {
+        "en": "Caribbean",
+        "zh-Hant": "加勒比"
+      },
+      "continent": "North America",
+      "bbox": [
+        -85,
+        10,
+        -59,
+        27
+      ]
+    },
+    "south-america": {
+      "name": {
+        "en": "South America",
+        "zh-Hant": "南美洲"
+      },
+      "continent": "South America",
+      "bbox": [
+        -82,
+        -56,
+        -34,
+        13
+      ]
+    },
+    "northern-africa": {
+      "name": {
+        "en": "Northern Africa",
+        "zh-Hant": "北非"
+      },
+      "continent": "Africa",
+      "bbox": [
+        -18,
+        15,
+        37,
+        38
+      ]
+    },
+    "western-africa": {
+      "name": {
+        "en": "Western Africa",
+        "zh-Hant": "西非"
+      },
+      "continent": "Africa",
+      "bbox": [
+        -18,
+        4,
+        16,
+        25
+      ]
+    },
+    "eastern-africa": {
+      "name": {
+        "en": "Eastern Africa",
+        "zh-Hant": "東非"
+      },
+      "continent": "Africa",
+      "bbox": [
+        28,
+        -12,
+        52,
+        18
+      ]
+    },
+    "middle-africa": {
+      "name": {
+        "en": "Middle Africa",
+        "zh-Hant": "中非"
+      },
+      "continent": "Africa",
+      "bbox": [
+        8,
+        -14,
+        32,
+        12
+      ]
+    },
+    "southern-africa": {
+      "name": {
+        "en": "Southern Africa",
+        "zh-Hant": "南部非洲"
+      },
+      "continent": "Africa",
+      "bbox": [
+        11,
+        -35,
+        41,
+        -10
+      ]
+    },
+    "australia-nz": {
+      "name": {
+        "en": "Australia and New Zealand",
+        "zh-Hant": "澳洲與紐西蘭"
+      },
+      "continent": "Oceania",
+      "bbox": [
+        112,
+        -48,
+        179,
+        -10
+      ]
+    },
+    "pacific": {
+      "name": {
+        "en": "Pacific Islands",
+        "zh-Hant": "太平洋島嶼"
+      },
+      "continent": "Oceania",
+      "bbox": [
+        130,
+        -25,
+        180,
+        10
+      ]
+    }
+  }
+}

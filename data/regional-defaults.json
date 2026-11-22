@@ -1,0 +1,453 @@
+{
+  "compiled": "2026-11-22",
+  "description": "Low-confidence regional inference for map countries without a full profile. The UI must label these as data-poor / inferred.",
+  "defaults": {
+    "southeast-asia": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook",
+        "tiktok"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference for smaller Southeast Asian territories not given a full profile: Facebook / WhatsApp / Google, with TikTok often strong. Shown as low confidence.",
+        "zh-Hant": "未獨立建檔的較小東南亞地區，按區域推斷：Facebook／WhatsApp／Google，TikTok 往往很強。以低信心顯示。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "south-asia": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook",
+        "youtube"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: South Asian WhatsApp–Meta / Facebook / Google pattern. Low confidence.",
+        "zh-Hant": "區域推斷：南亞 WhatsApp／Meta／Facebook／Google 格局。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "central-asia": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "instagram",
+        "facebook"
+      ],
+      "messaging": [
+        "telegram"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: Instagram plus Telegram or WhatsApp, Google search, with Yandex as a possible secondary. Low confidence.",
+        "zh-Hant": "區域推斷：Instagram，加上 Telegram 或 WhatsApp，搜尋 Google，Yandex 可能是次選。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "western-asia": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "instagram",
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: WhatsApp + Instagram/Facebook + cards + Google. Low confidence.",
+        "zh-Hant": "區域推斷：WhatsApp＋Instagram／Facebook＋卡＋Google。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "western-europe": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "instagram",
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference for microstates: WhatsApp, Instagram/Facebook, cards, Google, ChatGPT. Low confidence.",
+        "zh-Hant": "微型國家的區域推斷：WhatsApp、Instagram／Facebook、卡、Google、ChatGPT。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "northern-europe": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "instagram",
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: Nordic/Baltic open-web pattern. Low confidence for unlisted territories.",
+        "zh-Hant": "區域推斷：北歐／波羅的海開放網絡格局。未列地區為低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "southern-europe": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "instagram",
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: Southern European WhatsApp–Meta, cards, Google. Low confidence.",
+        "zh-Hant": "區域推斷：南歐 WhatsApp／Meta、卡、Google。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "eastern-europe": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook",
+        "instagram"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference for smaller Eastern European states: WhatsApp/Facebook, cards, Google — unless they sit closer to the VK–Yandex or Telegram pattern (see Russia, Belarus, Moldova, Ukraine).",
+        "zh-Hant": "較小東歐國家的區域推斷：WhatsApp／Facebook、卡、Google——除非更接近 VK／Yandex 或 Telegram 格局（見俄、白、摩、烏）。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "northern-america": {
+      "stack": "anglosphere-mixed",
+      "social": [
+        "facebook",
+        "instagram"
+      ],
+      "messaging": [
+        "imessage",
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference for unlisted North American territories: mixed messaging, cards, Google. Low confidence.",
+        "zh-Hant": "未列北美地區的區域推斷：混合通訊、卡、Google。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "central-america": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook",
+        "instagram"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: Central American WhatsApp–Meta. Low confidence.",
+        "zh-Hant": "區域推斷：中美 WhatsApp／Meta。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "caribbean": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook",
+        "instagram"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: Caribbean WhatsApp / Facebook. Low confidence. A few markets may skew to Snapchat on some Android rankings.",
+        "zh-Hant": "區域推斷：加勒比 WhatsApp／Facebook。低信心。部分市場在某些 Android 排名中可能偏 Snapchat。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "south-america": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "instagram",
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "mercadopago",
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: Spanish-speaking South American WhatsApp–Meta, Mercado Pago / cards, Google. Pix is not assumed outside Brazil.",
+        "zh-Hant": "區域推斷：西班牙語南美 WhatsApp／Meta、Mercado Pago／卡、Google。不假定巴西以外已是 Pix。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "northern-africa": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: North African Facebook / WhatsApp / Google. Low confidence.",
+        "zh-Hant": "區域推斷：北非 Facebook／WhatsApp／Google。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "western-africa": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: West African WhatsApp–Meta; mobile money is often important but brands vary. DataReportal warns that messaging use may be under-counted. Low confidence.",
+        "zh-Hant": "區域推斷：西非 WhatsApp／Meta；流動金錢往往重要但品牌各異。DataReportal 提醒通訊使用可能被低估。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "eastern-africa": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "mpesa"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: East African WhatsApp–Meta; M-Pesa-like mobile money is common but not universal. Low confidence outside Kenya and Tanzania.",
+        "zh-Hant": "區域推斷：東非 WhatsApp／Meta；類似 M-Pesa 的流動金錢常見但並非處處皆是。肯尼亞與坦桑尼亞以外為低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "middle-africa": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference and often data-poor: Facebook / WhatsApp / Google. Show the caveat prominently.",
+        "zh-Hant": "區域推斷且往往資料不足：Facebook／WhatsApp／Google。必須明顯標示保留。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "southern-africa": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference: WhatsApp–Meta, cards or mobile money, Google. Low confidence outside South Africa.",
+        "zh-Hant": "區域推斷：WhatsApp／Meta，卡或流動金錢，Google。南非以外為低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    },
+    "pacific": {
+      "stack": "whatsapp-meta",
+      "social": [
+        "facebook"
+      ],
+      "messaging": [
+        "whatsapp",
+        "messenger"
+      ],
+      "payments": [
+        "cards"
+      ],
+      "search": [
+        "google"
+      ],
+      "ai": [
+        "chatgpt"
+      ],
+      "notes": {
+        "en": "Regional inference for Pacific islands: Facebook is often the public internet; WhatsApp and Messenger are both used. Low confidence.",
+        "zh-Hant": "太平洋島嶼的區域推斷：Facebook 往往就是公開互聯網；WhatsApp 與 Messenger 都有人用。低信心。"
+      },
+      "confidence": "low",
+      "year": 2025
+    }
+  }
+}
