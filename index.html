@@ -2,7 +2,14 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script>
+      try {
+        if (localStorage.getItem("internet-nations-hide-chrome") === "1") {
+          document.documentElement.classList.add("chrome-hidden");
+        }
+      } catch (_) {}
+    </script>
     <title>互聯網民族</title>
     <meta
       name="description"
@@ -36,6 +43,7 @@
           <span id="year-badge" class="year-badge"></span>
           <div id="lang" class="lang" role="group"></div>
           <button id="index-btn" class="text-btn" type="button"></button>
+          <button id="about-btn" class="text-btn" type="button"></button>
         </div>
         <div class="control-row">
           <div id="layers" class="layers" role="group"></div>
@@ -59,18 +67,18 @@
           </div>
         </div>
         <nav id="crumbs" class="crumbs"></nav>
+        <button id="hide-chrome" class="chrome-hide" type="button"></button>
       </header>
+      <div id="chrome-restore" class="chrome-restore">
+        <button id="show-chrome" class="chrome-show" type="button"></button>
+        <button id="about-restore" class="chrome-method" type="button"></button>
+      </div>
       <div class="stage">
         <div id="map"></div>
         <div id="legend" class="legend"></div>
         <p id="geo-fail" class="geo-fail" hidden></p>
         <aside id="panel" class="panel" hidden tabindex="-1" aria-labelledby="panel-title"></aside>
       </div>
-      <footer class="foot">
-        <p id="foot-qual"></p>
-        <div id="foot-src" class="foot-src"></div>
-        <button id="about-btn" class="text-btn" type="button"></button>
-      </footer>
     </div>
     <div id="tip" class="tip" hidden></div>
     <div id="about" class="overlay" hidden></div>

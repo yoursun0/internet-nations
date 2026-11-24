@@ -8,7 +8,7 @@ A **qualitative, cited atlas** of dominant and secondary platforms in five parts
 
 ## Coverage
 
-- **Full profiles** in `data/countries.json`: about 90 countries and territories with country-specific sources or well-documented regional patterns (confidence `high` or `medium`).
+- **Full profiles** in `data/countries.json`: 134 countries and territories. Most are confidence `high` or `medium`; a `low` profile is still a country record in that file, not a regional default.
 - **Regional inference** in `data/regional-defaults.json`: used only to paint the rest of the map. The UI must show `low` confidence and a “data-poor / regional inference” note.
 - Regions follow a practical UN geoscheme-like split (East Asia, Southeast Asia, Western Europe, etc.) so the camera can zoom to a meaningful “neighbourhood”, not only a continent.
 
