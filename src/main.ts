@@ -1,6 +1,7 @@
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./styles.css";
+import { chromeHiddenActive, readHideChrome, writeHideChrome, type ChromeStorage } from "./chrome";
 import { parseView, resolveLang, serialize } from "./deeplink";
 import { fillFor } from "./fill";
 import { graticule } from "./geo";
@@ -51,9 +52,10 @@ const crumbs = $("crumbs");
 const legend = $("legend");
 const panel = $("panel");
 const geoFail = $("geo-fail");
-const footQual = $("foot-qual");
-const footSrc = $("foot-src");
 const aboutBtn = $("about-btn");
+const hideChromeBtn = $("hide-chrome");
+const showChromeBtn = $("show-chrome");
+const aboutRestoreBtn = $("about-restore");
 const tip = $("tip");
 const about = $("about");
 const indexBox = $("index");
@@ -70,6 +72,56 @@ let hoverId: string | null = null;
 let searchActive = 0;
 let builtLayers = false;
 let builtLang = false;
+let hideChromePref = false;
+let aboutOpener: HTMLElement | null = null;
+
+function chromeStorage(): ChromeStorage | null {
+  try {
+    return localStorage;
+  } catch {
+    return null;
+  }
+}
+
+function viewportWidth(): number {
+  return document.documentElement.clientWidth || window.innerWidth;
+}
+
+function chromeIsHidden(): boolean {
+  return chromeHiddenActive(hideChromePref, viewportWidth());
+}
+
+function syncChromeClass() {
+  document.documentElement.classList.toggle("chrome-hidden", hideChromePref);
+}
+
+function resizeMapSoon() {
+  map?.resize();
+  requestAnimationFrame(() => map?.resize());
+}
+
+function focusIfShown(el: HTMLElement | null): boolean {
+  if (!el || el.getClientRects().length === 0) return false;
+  el.focus();
+  return true;
+}
+
+function setHideChrome(hidden: boolean, focus?: "toggle" | "search") {
+  hideChromePref = hidden;
+  writeHideChrome(chromeStorage(), hidden);
+  syncChromeClass();
+  resizeMapSoon();
+  if (!focus) return;
+  requestAnimationFrame(() => {
+    if (focus === "search") {
+      searchInput.focus();
+      searchInput.select();
+      return;
+    }
+    if (chromeIsHidden()) focusIfShown(showChromeBtn);
+    else focusIfShown(hideChromeBtn);
+  });
+}
 
 const state: {
   lang: Lang;
@@ -369,6 +421,11 @@ function renderChrome() {
     button.setAttribute("aria-pressed", button.dataset.lang === lang ? "true" : "false");
   }
   indexBtn.textContent = t(lang, "panel.index");
+  aboutBtn.textContent = t(lang, "about.open");
+  aboutRestoreBtn.textContent = t(lang, "about.open");
+  hideChromeBtn.textContent = t(lang, "chrome.hide");
+  showChromeBtn.textContent = t(lang, "chrome.show");
+  hideChromeBtn.setAttribute("aria-pressed", chromeIsHidden() ? "true" : "false");
   layersEl.setAttribute("aria-label", t(lang, "layers.aria"));
   for (const button of layersEl.querySelectorAll("button")) {
     const layer = button.dataset.layer as LayerId;
@@ -387,7 +444,6 @@ function renderChrome() {
   regionBtn.setAttribute("aria-label", t(lang, "region.menu"));
   renderRegionMenu();
   renderCrumbs();
-  renderFooter();
   const wide = window.matchMedia("(min-width: 960px)").matches;
   legend.classList.toggle("open", wide || state.legendOpen);
   renderLegend();
@@ -488,27 +544,15 @@ function renderCrumbs() {
   });
 }
 
-function renderFooter() {
-  const lang = state.lang;
-  footQual.textContent = t(lang, "footer.qual");
-  aboutBtn.textContent = t(lang, "about.open");
-  footSrc.replaceChildren();
-  const label = document.createElement("span");
-  label.textContent = t(lang, "footer.sources");
-  footSrc.append(label);
-  for (const id of LAYER_SOURCE_IDS[state.layer] ?? []) {
-    const source = SOURCES[id];
-    if (!source) continue;
-    const link = document.createElement("a");
-    link.href = source.url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = source.title;
-    footSrc.append(link);
-  }
-  const credit = document.createElement("span");
-  credit.textContent = t(lang, "footer.ne");
-  footSrc.append(credit);
+function sourceLink(id: string): HTMLAnchorElement | null {
+  const source = SOURCES[id];
+  if (!source) return null;
+  const link = document.createElement("a");
+  link.href = source.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = `${source.title} (${source.year})`;
+  return link;
 }
 
 function inLegendScope(profile: Profile): boolean {
@@ -770,12 +814,47 @@ function renderAbout() {
   title.id = "about-title";
   title.textContent = t(lang, "about.title");
   card.setAttribute("aria-labelledby", "about-title");
-  card.append(close, title);
+  const qual = document.createElement("p");
+  qual.className = "about-qual";
+  qual.textContent = t(lang, "footer.qual");
+  card.append(close, title, qual);
   for (let i = 1; i <= 10; i++) {
     const paragraph = document.createElement("p");
     paragraph.textContent = t(lang, `about.p${i}`);
     card.append(paragraph);
   }
+  const cite = document.createElement("section");
+  cite.className = "cite";
+  const sourcesHead = document.createElement("h3");
+  sourcesHead.textContent = t(lang, "about.sources");
+  cite.append(sourcesHead);
+  for (const layer of LAYERS) {
+    const row = document.createElement("div");
+    row.className = "cite-row";
+    if (layer === state.layer) {
+      row.classList.add("current");
+      row.setAttribute("aria-current", "true");
+    }
+    const label = document.createElement("p");
+    label.className = "cat-label";
+    label.textContent =
+      layer === state.layer
+        ? `${t(lang, `layer.${layer}`)} · ${t(lang, "about.current")}`
+        : t(lang, `layer.${layer}`);
+    const links = document.createElement("div");
+    links.className = "sources";
+    for (const id of LAYER_SOURCE_IDS[layer] ?? []) {
+      const link = sourceLink(id);
+      if (link) links.append(link);
+    }
+    row.append(label, links);
+    cite.append(row);
+  }
+  const credit = document.createElement("p");
+  credit.className = "about-credit";
+  credit.textContent = t(lang, "footer.ne");
+  cite.append(credit);
+  card.append(cite);
   about.append(card);
   about.hidden = false;
 }
@@ -850,7 +929,8 @@ function renderIndex() {
   indexBox.hidden = false;
 }
 
-function openAbout() {
+function openAbout(opener?: HTMLElement) {
+  aboutOpener = opener ?? aboutBtn;
   state.about = true;
   renderAbout();
   about.querySelector("button")?.focus();
@@ -860,7 +940,9 @@ function closeAbout() {
   state.about = false;
   about.hidden = true;
   about.replaceChildren();
-  aboutBtn.focus();
+  if (focusIfShown(aboutOpener)) return;
+  if (chromeIsHidden()) focusIfShown(aboutRestoreBtn) || focusIfShown(showChromeBtn);
+  else focusIfShown(aboutBtn) || focusIfShown(hideChromeBtn);
 }
 
 function openIndex() {
@@ -1166,8 +1248,11 @@ function onKeydown(event: KeyboardEvent) {
   const typing = !!target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA");
   if (event.key === "/" && !typing && !event.metaKey && !event.ctrlKey && !event.altKey) {
     event.preventDefault();
-    searchInput.focus();
-    searchInput.select();
+    if (chromeIsHidden()) setHideChrome(false, "search");
+    else {
+      searchInput.focus();
+      searchInput.select();
+    }
     return;
   }
   if (event.key !== "Escape") return;
@@ -1200,14 +1285,29 @@ function onKeydown(event: KeyboardEvent) {
 
 function boot() {
   const parsed = parseView(location.search);
-  state.lang = resolveLang(location.search, localStorage.getItem(LANG_KEY));
+  const storage = chromeStorage();
+  state.lang = resolveLang(location.search, storage?.getItem(LANG_KEY) ?? null);
   state.layer = parsed.layer;
   state.region = parsed.region;
   if (parsed.region) state.continent = REGIONS[parsed.region]?.continent ?? null;
-  localStorage.setItem(LANG_KEY, state.lang);
+  hideChromePref = readHideChrome(storage);
+  syncChromeClass();
+  try {
+    storage?.setItem(LANG_KEY, state.lang);
+  } catch {
+    /* private mode */
+  }
   render();
 
-  aboutBtn.addEventListener("click", openAbout);
+  aboutBtn.addEventListener("click", () => openAbout(aboutBtn));
+  aboutRestoreBtn.addEventListener("click", () => openAbout(aboutRestoreBtn));
+  hideChromeBtn.addEventListener("click", () => setHideChrome(true, "toggle"));
+  showChromeBtn.addEventListener("click", () => setHideChrome(false, "toggle"));
+  skip.addEventListener("click", (event) => {
+    if (!chromeIsHidden()) return;
+    event.preventDefault();
+    setHideChrome(false, "search");
+  });
   indexBtn.addEventListener("click", openIndex);
   regionBtn.addEventListener("click", toggleRegion);
   about.addEventListener("click", (event) => {
@@ -1286,9 +1386,11 @@ function boot() {
     window.addEventListener("pointerup", up);
   });
   window.addEventListener("resize", () => {
-    map?.resize();
+    resizeMapSoon();
     const wide = window.matchMedia("(min-width: 960px)").matches;
     legend.classList.toggle("open", wide || state.legendOpen);
+    if (chromeIsHidden()) hideChromeBtn.setAttribute("aria-pressed", "true");
+    else hideChromeBtn.setAttribute("aria-pressed", "false");
     drawLabels();
   });
 

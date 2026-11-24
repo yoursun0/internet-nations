@@ -25,6 +25,10 @@ test("required chrome and the data-poor label exist in both languages", () => {
     "stack.unknown",
     "about.p3",
     "about.p6",
+    "about.open",
+    "about.sources",
+    "chrome.hide",
+    "chrome.show",
   ]) {
     expect(t("zh-Hant", key).length).toBeGreaterThan(0);
     expect(t("en", key).length).toBeGreaterThan(0);
@@ -32,4 +36,10 @@ test("required chrome and the data-poor label exist in both languages", () => {
   expect(t("zh-Hant", "panel.inferred")).toBe("資料不足／區域推斷");
   expect(t("zh-Hant", "legend.inferred")).toBe("資料不足／區域推斷");
   expect(t("en", "panel.inferred").toLowerCase()).toContain("data-poor");
+  expect(t("zh-Hant", "chrome.hide")).toBe("隱藏選單");
+  expect(t("en", "chrome.hide")).toBe("Hide menu");
+  expect(t("zh-Hant", "chrome.show")).toBe("顯示選單");
+  expect(t("en", "chrome.show")).toBe("Show menu");
+  expect(t("zh-Hant", "about.open")).toBe("方法");
+  expect(t("en", "about.open")).toBe("Method");
 });
